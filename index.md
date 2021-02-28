@@ -17,5 +17,5 @@ Course link for Open Source GIS Spring 2021 [here](https://gis4dev.github.io)
 
 ## Blog Posts
 
-- [What is Open GIScience?](blog/open-source.md)
+- [What is Open GIScience?](blogs/open-source.md)
 - another future blog
