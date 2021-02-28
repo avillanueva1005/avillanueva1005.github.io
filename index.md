@@ -4,7 +4,7 @@ layout: default
 ---
 
 # Alitzel Villanueva's Open Source GIS Portfolio
-Hi, my name is Alitzel Villanueva and I am a conservation biology student excited about learning more about open source.
+Hi, my name is Alitzel Villanueva and I am a conservation biology student excited to learn more about open source.
 
 ## GIScience Analyses
 
