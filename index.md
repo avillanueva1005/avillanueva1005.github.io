@@ -19,4 +19,4 @@ Hi, my name is Alitzel Villanueva and I am a conservation biology student excite
 
 
 
-Course link for Open Source GIS Spring 2021 [here](https://gis4dev.github.io)
+Course link for Open Source GIS Spring 2021 [here](https://gis4dev.github.io).
