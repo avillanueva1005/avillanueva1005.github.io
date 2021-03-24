@@ -1,0 +1,451 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:aggregate_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:aggregate" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="1183.115628786803" name="component_pos_x" type="double"/>
+        <Option value="173.64491584218496" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Aggregate" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="746.5322341030007" name="component_pos_x" type="double"/>
+      <Option value="196.3691279685983" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:aggregate_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="AGGREGATES" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option value="first_value" name="aggregate" type="QString"/>
+                <Option value="," name="delimiter" type="QString"/>
+                <Option value=" attribute(  @TargetID )" name="input" type="QString"/>
+                <Option value="0" name="length" type="int"/>
+                <Option value="TargetID" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="10" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="sum" name="aggregate" type="QString"/>
+                <Option value="," name="delimiter" type="QString"/>
+                <Option value="attribute( @TargetWeight )" name="input" type="QString"/>
+                <Option value="0" name="length" type="int"/>
+                <Option value="SumBeds" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="4" name="type" type="int"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="GROUP_BY" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="attribute(@TargetID)" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:extractbyexpression_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:centroids_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:centroids" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="903.9993193150597" name="component_pos_x" type="double"/>
+        <Option value="170.26133032902786" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Centroids" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="801.6568676033621" name="component_pos_x" type="double"/>
+      <Option value="302.03625316839106" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:centroids_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="hospitals_combined_centroids" type="Map">
+          <Option value="native:centroids_1" name="child_id" type="QString"/>
+          <Option value="" name="color" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option value="" name="color" type="QString"/>
+            <Option value="" name="component_description" type="QString"/>
+            <Option value="60" name="component_height" type="double"/>
+            <Option value="0" name="component_pos_x" type="double"/>
+            <Option value="0" name="component_pos_y" type="double"/>
+            <Option value="100" name="component_width" type="double"/>
+            <Option value="true" name="outputs_collapsed" type="bool"/>
+            <Option value="true" name="parameters_collapsed" type="bool"/>
+          </Option>
+          <Option value="hospitals_combined_centroids" name="component_description" type="QString"/>
+          <Option value="30" name="component_height" type="double"/>
+          <Option value="803.8147313667594" name="component_pos_x" type="double"/>
+          <Option value="369.6467830240028" name="component_pos_y" type="double"/>
+          <Option value="200" name="component_width" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="hospitals_combined_centroids" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+          <Option value="true" name="outputs_collapsed" type="bool"/>
+          <Option value="true" name="parameters_collapsed" type="bool"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALL_PARTS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:aggregate_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbyattribute_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:extractbyattribute" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="594.6666666666666" name="component_pos_x" type="double"/>
+        <Option value="149.66666666666666" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Remove hospitals with no beds" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="433.0486241855177" name="component_pos_x" type="double"/>
+      <Option value="163.24853149734034" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:extractbyattribute_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="BEDS" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="TargetLayer" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OPERATOR" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="2" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="VALUE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbyexpression_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:extractbyexpression" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="1451.5325200406055" name="component_pos_x" type="double"/>
+        <Option value="482.1763493365088" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Extract general hospitals" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="504.0823291041289" name="component_pos_x" type="double"/>
+      <Option value="353.1646197063236" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:extractbyexpression_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="EXPRESSION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="&quot;TYPE&quot; = 'GENERAL ACUTE CARE' OR &quot;TYPE&quot; = 'LONG TERM CARE' OR &quot;TYPE&quot; = 'CRITICAL ACCESS' OR &quot;TYPE&quot; = 'CHILDREN'  OR &quot;TYPE&quot; = 'WOMEN' " name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:extractbyexpression_2" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbyexpression_2" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:extractbyexpression" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="410.66666666666663" name="component_pos_x" type="double"/>
+        <Option value="319" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Remove closed hospital" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="441.3333333333333" name="component_pos_x" type="double"/>
+      <Option value="256" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:extractbyexpression_2" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="EXPRESSION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="&quot;STATUS&quot; = 'OPEN'" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:extractbyattribute_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues" type="Map">
+    <Option value="NAME" name="Aggregateby" type="QString"/>
+    <Option value="netown_68023f1c_03cb_45b9_ba46_800e75059cb5" name="InputPolygonLayer" type="QString"/>
+    <Option value="ZIP" name="TargetID" type="QString"/>
+    <Option value="Hospitals_c4d8ab6f_95f7_4015_b240_b391346ea014" name="TargetLayer" type="QString"/>
+    <Option value="BEDS" name="TargetWeight" type="QString"/>
+    <Option value="true" name="VERBOSE_LOG" type="bool"/>
+    <Option name="native:aggregate_1:aggregate_beds_per_town" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option value="System" name="fileEncoding" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option value="true" name="active" type="bool"/>
+          <Option value="1" name="type" type="int"/>
+          <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:centroids_1:finalcentroids" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option value="System" name="fileEncoding" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option value="true" name="active" type="bool"/>
+          <Option value="1" name="type" type="int"/>
+          <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help" type="Map">
+    <Option value="Jacob Freedman, Middlebury College Class of 2021" name="ALG_CREATOR" type="QString"/>
+    <Option value="This model is for preprocessing the hospital data point from U.S. Department of Homeland Security into centroid points of all hospitals in target region, summarizing the value of the weight field." name="ALG_DESC" type="QString"/>
+    <Option value="This tool was created in collaboration with Professor Joseph Holler and the students of GEOG0323 - Open Source GIS, Spring 2021." name="ALG_HELP_CREATOR" type="QString"/>
+    <Option value="1.0" name="ALG_VERSION" type="QString"/>
+    <Option value="Field to use for town boundary aggregation (" name="Aggregateby" type="QString"/>
+    <Option value="https://jafreedman12.github.io/gravity/gravity.html" name="HELP_URL" type="QString"/>
+    <Option value="Boundaries of spatial regions (towns, generally)" name="InputPolygonLayer" type="QString"/>
+    <Option value="Creates centroid of hospitals within Target ID zone (zip code/town)." name="SHORT_DESCRIPTION" type="QString"/>
+    <Option value="Field by which you are aggregating hospital point layer (e.g. zip code, towns)" name="TargetID" type="QString"/>
+    <Option value="Point layer you are trying to summarize (e.g. hospitals)" name="TargetLayer" type="QString"/>
+    <Option value="Field you want to summarize (e.g. number of beds)" name="TargetWeight" type="QString"/>
+    <Option value="Summarized entroids of hospitals in study region (e.g. sum of beds in each zip code)" name="native:centroids_1:hospitals_combined_centroids" type="QString"/>
+  </Option>
+  <Option name="modelVariables"/>
+  <Option value="middlebury" name="model_group" type="QString"/>
+  <Option value="preprocess_hospital_data" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="TargetID" type="Map">
+      <Option value="false" name="allow_multiple" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
+      <Option value="" name="default" type="QString"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="false" name="default_to_all_fields" type="bool"/>
+      <Option value="Target ID" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="Field by which you are aggregating hospital point layer (e.g. zip code, towns)" name="help" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="TargetID" name="name" type="QString"/>
+      <Option value="field" name="parameter_type" type="QString"/>
+      <Option value="TargetLayer" name="parent_layer" type="QString"/>
+    </Option>
+    <Option name="TargetLayer" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="0" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="Target Layer" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="Point layer you are trying to summarize (e.g. hospitals)" name="help" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="TargetLayer" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="TargetWeight" type="Map">
+      <Option value="false" name="allow_multiple" type="bool"/>
+      <Option value="0" name="data_type" type="int"/>
+      <Option value="" name="default" type="QString"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="false" name="default_to_all_fields" type="bool"/>
+      <Option value="Target Weight" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="Field you want to summarize (e.g. number of beds)" name="help" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="TargetWeight" name="name" type="QString"/>
+      <Option value="field" name="parameter_type" type="QString"/>
+      <Option value="TargetLayer" name="parent_layer" type="QString"/>
+    </Option>
+    <Option name="native:centroids_1:hospitals_combined_centroids" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="0" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="hospitals_combined_centroids" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="native:centroids_1:hospitals_combined_centroids" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_append" type="bool"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder" type="StringList">
+    <Option value="InputPolygonLayer" type="QString"/>
+    <Option value="Aggregateby" type="QString"/>
+    <Option value="TargetLayer" type="QString"/>
+    <Option value="TargetID" type="QString"/>
+    <Option value="TargetWeight" type="QString"/>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="TargetID" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="390.66666666666663" name="component_pos_x" type="double"/>
+        <Option value="444.3333333333333" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="TargetID" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="185.16070423226154" name="component_pos_x" type="double"/>
+      <Option value="199.79508382549375" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="TargetID" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+    <Option name="TargetLayer" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="418.66666666666663" name="component_pos_x" type="double"/>
+        <Option value="184.33333333333331" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="TargetLayer" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="182.43368208663293" name="component_pos_x" type="double"/>
+      <Option value="125.33333333333333" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="TargetLayer" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+    <Option name="TargetWeight" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="638.6666666666666" name="component_pos_x" type="double"/>
+        <Option value="15" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="TargetWeight" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="173.79508382549375" name="component_pos_x" type="double"/>
+      <Option value="267.0982394193461" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="TargetWeight" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+  </Option>
+</Option>
