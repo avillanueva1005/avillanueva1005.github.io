@@ -15,7 +15,7 @@ Hi, my name is Alitzel Villanueva and I am a conservation biology student excite
 
 - [What is Open GIScience?](blogs/open-source.md)
 - [GIS as Reproducible Science](blogs/reproducible.md)
-- another future blog
+- [Error and Uncertainty](blogs/erroruncertainty.md)
 
 
 
