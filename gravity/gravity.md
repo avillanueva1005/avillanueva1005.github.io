@@ -17,11 +17,12 @@ Before the gravity model can be implemented, it is necessary to clean the data t
 ![Hospital data preprocessed model](assets/hospitalpreprocessingmap.png)
 
 ### Gravity Model
+To begin calculating hospital catchments in the New England area, I started by inputting an input polygon layer of townships in New England and a target layer of the preprocessed hospital centroids to find the gravity model's version of hospital service areas in New England. Population and beds were the weight fields respectively for the towns and hospital layers used in the gravity model.
 
 ![Gravity model](assets/gravitymodelmap2.png)
 
 ### Interpretation of the models:
-
+Overall, my gravity model of spatial interaction does not compare well to the actual Dartmouth Hospital Service Area as seen in the web map. I believe the issue lies in the fact that I located both layers by name and not ZIP code, which I think impacted the aggregation of data points. 
 
 ### Acknowledgments:
 Thank you to the Spring 2021 GEOG 323 class for all of the collaborative work and to Prof. Holler for data and guidance.
