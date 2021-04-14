@@ -22,7 +22,7 @@ To begin calculating hospital catchments in the New England area, I started by i
 ![Gravity model](assets/gravitymodelmap2.png)
 
 ### Interpretation of the models:
-Overall, my gravity model of spatial interaction does not compare well to the actual Dartmouth Hospital Service Area as seen in the web map. I believe the issue lies in the fact that I located both layers by name and not ZIP code, which I think impacted the aggregation of data points.
+Overall, my gravity model of spatial interaction does not compare well to the actual Dartmouth Hospital Service Area as seen in the web map. I believe the issue lies in the fact that I located both layers by name and not ZIP code, which I think impacted the aggregation of data points. This is heavily seen all over my web map, but more specifically this difference in service areas calculated is evident nearer big cities like New York and Boston where my gravity model splits up the Dartmouth Hospital Service Areas into smaller portions.
 
 ### Acknowledgments:
 Thank you to the Spring 2021 GEOG 323 class for all of the collaborative work and to Prof. Holler for data and guidance.
