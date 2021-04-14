@@ -13,9 +13,9 @@ A gravity model is an incredibly useful tool that can address issues of accessib
 
 Before the gravity model can be implemented, it is necessary to clean the data to ensure it can be used. This first model shows the preprocessing of one of the data set inputs used in the gravity model, hospitals. This model allows the data to cover the areas we are examining while also making sure we are looking at hospitals that serve the general population.
 
-![Hospital data preprocessed model](preprocessing.png)
+![Hospital data preprocessed model](assets/hospitalpreprocessingmap.png)
 
-![Gravity model](gravitymodelmap.png)
+![Gravity model](assets/gravitymodelmap.png)
 
 ## Interpretation of the models:
 
