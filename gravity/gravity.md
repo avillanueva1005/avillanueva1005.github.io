@@ -5,8 +5,8 @@ title: Gravity Model Spatial Interaction
 
 ## Deliverables:
 - [Web Map of Results](assets/index.html)
-- [Gravity Model](gravitymodel.model3)
-- [Hospital Preprocessing Model](preprocessing.model3)
+- [Gravity Model](assets/gravitymodel.model3)
+- [Hospital Preprocessing Model](assets/preprocessing.model3)
 
 ## Purpose of the models:
 A gravity model is an incredibly useful tool that can address issues of accessibility and distance between two objects. In this case, we are looking at the accessibility of hospitals within Vermont to analyze the service area of different hospitals in different towns throughout the state. Using two different input point layers, we can examine which hospitals serve which geographic areas. This model is able to automate a multi-step process that can involve many errors along the way. Through this model, the process of analyzing spatial interaction can be reproduce exactly the same each time.
