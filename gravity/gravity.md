@@ -4,7 +4,7 @@ title: Gravity Model Spatial Interaction
 ---
 
 ## Deliverables:
-- [Web Map of Results](assets/qgis2web/index.html)
+- [Web Map of Results](assets/index.html)
 - [Gravity Model](gravitymodel.model3)
 - [Hospital Preprocessing Model](preprocessing.model3)
 
