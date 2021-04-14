@@ -15,7 +15,7 @@ Before the gravity model can be implemented, it is necessary to clean the data t
 
 ![Hospital data preprocessed model](assets/hospitalpreprocessingmap.png)
 
-![Gravity model](assets/gravitymodelmap.png)
+![Gravity model](assets/gravitymodelmap2.png)
 
 ## Interpretation of the models:
 
