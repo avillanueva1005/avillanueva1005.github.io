@@ -9,15 +9,13 @@ Hi, my name is Alitzel Villanueva and I am a conservation biology student excite
 ## GIScience Analyses
 
 - [Gravity Model of Spatial Model of Spatial Interaction](gravity/gravity.md)
-- [Rosgen Classification in GRASS/R](RE-rosgen/rosgen.md)
-- [Spatial Analysis of Dar es Salaam](OSM_Postgis/sql.md)
+-
 - next project
 
 ## Blog Posts
 
 - [What is Open GIScience?](blogs/open-source.md)
-- [GIS as Reproducible Science](blogs/reproducible.md)
-- [Error and Uncertainty](blogs/erroruncertainty.md)
+- [A Bottom-up Approach to Epidemic Modeling](blogs/webinardebate.md)
 
 
 
