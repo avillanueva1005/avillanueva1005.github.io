@@ -55,19 +55,19 @@ Outline the data to be used in your replication study, including:
 
 ## Replication Results
 
-- ![temporal analysis graph](RE-Dorian/covidtweetsbyhours.png)
+![temporal analysis graph](RE-Dorian/covidtweetsbyhours.png)
 Figure 1. Amount of COVID-19 vaccine tweets from May 14th to May 20th 2021.
 
-- ![content analysis graph](RE-Dorian/uniquewords.png)
+![content analysis graph](RE-Dorian/uniquewords.png)
 Figure 2. Number of times most frequently tweeted words appeared during this study period.
 
-- ![word pair network](RE-Dorian/wordnetwork.png)
+![word pair network](RE-Dorian/wordnetwork.png)
 Figure 3. Word pair network of words commonly associated with each other in tweets during this study period.
 
-- ![map of twitter activity](RE-Dorian/mapcovidtweets.png)
+![map of twitter activity](RE-Dorian/mapcovidtweets.png)
 Figure 4. Locations of covid-vaccine related tweets in the Western half of the U.S.
 
-- ![hot spot analysis](RE-Dorian/mapclusterscovidtwitter.png)
+![hot spot analysis](RE-Dorian/mapclusterscovidtwitter.png)
 Figure 5. Hot and cold spots for covid-related Twitter activity in the Western half of the U.S.
 
 ## Unplanned Deviations from the Protocol
