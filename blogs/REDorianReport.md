@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RE- Spatial-temporal and content analysis of Twitter Data
+title: Spatial-temporal and content analysis of Twitter Data
 ---
 
 
