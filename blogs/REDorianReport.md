@@ -55,11 +55,20 @@ Outline the data to be used in your replication study, including:
 
 ## Replication Results
 
-- ![temporal analysis graph](figuresotherprojects/figuredorian/covidtweetsbyhours.png)
-- ![content analysis graph](figuresotherprojects/figuredorian/uniquewords.png)
-- ![word pair network](figuresotherprojects/figuredorian/wordnetwork.png)
-- ![map of twitter activity](figuresotherprojects/figuredorian/mapcovidtweets.png)
-- ![hot spot analysis](figuresotherprojects/figuredorian/mapclusterscovidtwitter.png)
+- ![temporal analysis graph](figuresotherprojects/covidtweetsbyhours.png)
+Figure 1. Amount of COVID-19 vaccine tweets
+
+- ![content analysis graph](figuresotherprojects/uniquewords.png)
+Figure 2.
+
+- ![word pair network](figuresotherprojects/wordnetwork.png)
+Figure 3.
+
+- ![map of twitter activity](figuresotherprojects/mapcovidtweets.png)
+Figure 4.
+
+- ![hot spot analysis](figuresotherprojects/mapclusterscovidtwitter.png)
+Figure 5.
 
 ## Unplanned Deviations from the Protocol
 
