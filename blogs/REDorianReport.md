@@ -16,8 +16,8 @@ Alitzel Villanueva
 
 Replication Materials Available at: [RE-Dorian](https://github.com/avillanueva1005/RE-Dorian)
 
-Created: `DD May 2021`
-Revised: `19 May 2021`
+Created: `19 May 2021`
+Revised: `20 May 2021`
 
 ## Abstract
 
@@ -27,7 +27,7 @@ Wang et al (2016) analyzed Twitter data for wildfires in California, finding tha
 
 Holler (2021) is studying Twitter data for Hurricane Dorian on the Atlantic coast, finding that in spite of tending news and social media content regarding a false narrative of risk, original Tweets still clustered significantly along the real hurricane track, and only along the hurricane track.
 
-Reproducing and replicating spatial research of .....  continues to be relevant because ....
+Reproducing and replicating spatial research of Wang et al. and Holler  continues to be relevant because ....
 
 In his replication study, I will ...
 
@@ -55,10 +55,11 @@ Outline the data to be used in your replication study, including:
 
 ## Replication Results
 
-- temporal analysis graph
-- content analysis graph
-- map of twitter activity
-- hot spot analysis
+- ![temporal analysis graph](figuresotherprojects/figuredorian/covidtweetsbyhours.png)
+- ![content analysis graph](figuresotherprojects/figuredorian/uniquewords.png)
+- ![word pair network](figuresotherprojects/figuredorian/wordnetwork.png)
+- ![map of twitter activity](figuresotherprojects/figuredorian/mapcovidtweets.png)
+- ![hot spot analysis](figuresotherprojects/figuredorian/mapclusterscovidtwitter.png)
 
 ## Unplanned Deviations from the Protocol
 
