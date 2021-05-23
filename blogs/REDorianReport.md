@@ -17,11 +17,12 @@ Alitzel Villanueva
 Replication Materials Available at: [RE-Dorian](https://github.com/avillanueva1005/RE-Dorian)
 
 Created: `19 May 2021`
-Revised: `20 May 2021`
+Revised: `23 May 2021`
 
 ## Abstract
 
 Why study the spatial distribution of Twitter data?
+The spatial distribution of Twitter data is useful not only to better understand natural disaster management from a human perspective, as Wang et al. (2016) and Holler (2021) have studied, but can also assist in further
 
 Wang et al (2016) analyzed Twitter data for wildfires in California, finding that the social media data ...
 
@@ -49,7 +50,8 @@ The replication study by Holler (2021) used R, including the rtweet, rehydratoR,
 Outline the data to be used in your replication study, including:
 
 - twitter search parameters
-- attach / link to files containing status_id's for the search results
+[Covid-19 twitter search status id](RE-Dorian/public/covidids.txt)
+[general May twitter search status id](RE-Dorian/public/mayids.txt)
 - any data used to normalize the tweets
 - methods for analysis / synthesis
 
@@ -78,7 +80,7 @@ Summarize changes and uncertainties between
 
 ## Discussion
 
-Provide a summary and interpretation of your key findings in relation to your research question. Mention if findings confirm or contradict patterns observed by Wang et al (2016) or by Holler (2
+Provide a summary and interpretation of your key findings in relation to your research question. Mention if findings confirm or contradict patterns observed by Wang et al (2016) or by Holler (2021)
 
 ## Conclusion
 
@@ -86,6 +88,8 @@ Restate the key findings and discuss their broader societal implications or cont
 Do the research findings suggest a need for any future research?
 
 ## References
+
+Wang, Z., X. Ye, and M. H. Tsou. 2016. Spatial, temporal, and content analysis of Twitter for wildfire hazards. *Natural Hazards* 83 (1):523–540. DOI:[10.1007/s11069-016-2329-6](https://doi.org/10.1007/s11069-016-2329-6).
 
 Include any referenced studies or materials in the [AAG Style of author-date referencing](https://www.tandf.co.uk//journals/authors/style/reference/tf_USChicagoB.pdf).
 
