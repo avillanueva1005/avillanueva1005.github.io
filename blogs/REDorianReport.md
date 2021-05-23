@@ -3,7 +3,6 @@ layout: page
 title: Spatial-temporal and content analysis of Twitter Data
 ---
 
-
 **Replication of**
 # Spatial, temporal and content analysis of Twitter data
 
@@ -25,13 +24,11 @@ The spatial distribution of Twitter data is useful to better understand natural 
 
 Wang et al. (2016) analyzed Twitter data for wildfires in California, finding that the social media data can provide useful information about natural disasters like wildfires through their ability to represent wildfires over space and time. Additionally, Wang et al. found that during natural disasters like wildfires, people's geographic awareness is distinct and they focus on broadcasting wildfire damage. Traditional forms of media and other public spokespeople hold a lot of social capital on sites like Twitter and they are integral to the retweet network surrounding a disaster during one.
 
-Holler (2021) is studying Twitter data for Hurricane Dorian on the Atlantic coast, finding that in spite of tending news and social media content regarding a false narrative of risk, original Tweets still clustered significantly along the real hurricane track, and only along the hurricane track.
+Holler (2021) is studying Twitter data for Hurricane Dorian on the Atlantic coast, finding that in spite of trending news and social media content regarding a false narrative of risk, original Tweets still clustered significantly along the real hurricane track, and only along the hurricane track.
 
-Reproducing and replicating spatial research of Wang et al. and Holler  continues to be relevant because ....
+Reproducing and replicating spatial research of Wang et al. and Holler continues to be relevant because of its accessibility and usefulness to supplement natural disaster preparation and responses. Furthermore, the use of social media data to conduct spatial research also can be helpful in further understanding other important emergency/current events to respond to additional community needs such as Covid-19 vaccine distribution. The use of social media in these kinds of events can benefit local and federal vaccine roll outs, for example, as people's attitudes and needs are publicized online.
 
-In his replication study, I will ...
-
-
+In his replication study, I will examine Twitter activity around the Los Angeles area, specifically looking at Covid-19 vaccine posts. 
 
 ## Original Study Information
 
