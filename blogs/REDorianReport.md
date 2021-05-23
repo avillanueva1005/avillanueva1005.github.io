@@ -21,8 +21,7 @@ Revised: `23 May 2021`
 
 ## Abstract
 
-Why study the spatial distribution of Twitter data?
-The spatial distribution of Twitter data is useful not only to better understand natural disaster management from a human perspective, as Wang et al. (2016) and Holler (2021) have studied, but can also assist in further
+The spatial distribution of Twitter data is useful to better understand natural disaster management from a human perspective, as Wang et al. (2016) and Holler (2021) have studied. It is difficult and not cost effective, in terms of time or money, to conduct human-oriented studies to analyze human behavior in natural disasters, despite how useful this information would be to more effectively prepare and mitigate natural disaster effects. The use of social media information like Twitter posts that were generated during a natural disaster can solve this issue because of its accessibility and applicability to analyze what resources and needed where during any disaster event.  
 
 Wang et al (2016) analyzed Twitter data for wildfires in California, finding that the social media data ...
 

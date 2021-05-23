@@ -10,7 +10,7 @@ Hi, my name is Alitzel Villanueva and I am a conservation biology student excite
 
 - [Gravity Model of Spatial Model of Spatial Interaction](gravity/gravity.md)
 - [Reproduction of a Climate Vulnerability Model in Malawi](RE-Malcomb/malawi.md)
-- [Covid-19 on Twitter in May](blogs/REDorianReport.md)
+- [Covid-19 vaccines on Twitter during May 2021](blogs/REDorianReport.md)
 - [Where Covid-19 Analysis](RP-Kang/covid.md)
 
 ## Blog Posts
