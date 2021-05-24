@@ -68,7 +68,7 @@ Figure 5. Hot and cold spots for Covid-19 related Twitter activity in the Wester
 
 Aside from initial changes to the Holler (2021) code on the Twitter Search API queries and geographic search location used, the workflow for the final analysis did not change from the initial code that was used to analyze Hurricane Dorian related tweets in Holler (2021). I did not complete the Hurricane Dorian spatial analysis in PostGIS, but instead calculated the normalized difference tweet index in R. However, I did not end up using this code for the final Covid-19 vaccine analysis, but instead used the final code used by Holler (2021).
 
-```{r my spatial analysis attempt}
+```
 --Count the number of dorian points in each county
 counties = counties %>%
   mutate(
