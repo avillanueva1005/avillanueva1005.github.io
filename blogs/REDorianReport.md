@@ -66,9 +66,38 @@ Figure 5. Hot and cold spots for Covid-19 related Twitter activity in the Wester
 
 ## Unplanned Deviations from the Protocol
 
-Summarize changes and uncertainties between
-- your expectation of a reproduction workflow based on the reading and Dorian analysis
-- your final workflow after completing the lab
+Aside from initial changes to the Holler (2021) code on the Twitter Search API queries and geographic search location used, the workflow for the final analysis did not change from the initial code that was used to analyze Hurricane Dorian related tweets in Holler (2021). I did not complete the Hurricane Dorian spatial analysis in PostGIS, but instead calculated the normalized difference tweet index in R. However, I did not end up using this code for the final Covid-19 vaccine analysis, but instead used the final code used by Holler (2021).
+
+```{r my spatial analysis attempt}
+# Count the number of dorian points in each county
+counties = counties %>%
+  mutate(
+    doriancount = st_intersects(counties$geometry, doraingeom$geometry) %>%
+  lengths(
+  ))
+# Count the number of november points in each county
+novgeom <-st_as_sf(november, coords = c("lng","lat")) %>%
+  st_set_crs(4326) %>%
+  st_transform(4269)
+counties = counties %>%
+  mutate(
+    novcount = st_intersects(counties$geometry, novgeom$geometry) %>%
+      lengths(
+      ))
+# Set counties with no points to 0 for the november count
+# Calculate the normalized difference tweet index (made this up, based on NDVI), where
+# ndti = (tweets about storm – baseline twitter activity) / (tweets about storm + baseline twitter activity)
+dorian = dorian %>%
+  mutate(
+    normalizeddiff = (length(dorian$text)-length(november$text))/(length(dorian$text)+length(november$text))
+  )
+
+random = dorian %>%
+mutate(
+  normalizeddiff = (n()-nrow(november))/(n()+nrow(november))
+) %>%
+  select(normalizeddiff)
+```
 
 ## Discussion
 
