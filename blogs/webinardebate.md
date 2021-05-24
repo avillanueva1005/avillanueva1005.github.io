@@ -5,9 +5,9 @@ title: A Bottom-up Approach to Epidemic Modeling: Conceptual Framework, Implemen
 
 This is my preparation for the dabate on a webinar presented by Xun Shi regarding a bottom-up approach in GIS for Friday, May 14.
 
-# Notes from webinar:
+## Notes from webinar:
 
-## Review of alternative:
+### Review of alternative:
 ### Top down approach
   - goal is to first establish global/general models or laws and then apply them to the entire problem
   - assumes each local space or individual subject is a substantiation of the global/general models or laws
@@ -16,7 +16,7 @@ This is my preparation for the dabate on a webinar presented by Xun Shi regardin
   - current modeling of COVID-19 is top down
   - advantages: simply representation of real world, good at identifying general pattern, good for large region like country
 
-## Bottom-up approach:
+### Bottom-up approach:
   - does not seek to build global/general model beforehand
     -builds relatively simple rules that are individualized for each case and applies these rules to local spaces/individuals to mimic the real-world
   - global/general patterns emerge from this process
@@ -25,7 +25,7 @@ This is my preparation for the dabate on a webinar presented by Xun Shi regardin
   - advantages: modeling local spaces and individuals, modeling stochastic processes, modeling interaction among local spaces and individuals, modeling progression, modeling based on simple rules, tries to represent complexity, good for small areas like cities
   - disadvantages: isn't trying to simplify or look at general patterns of real world, restriction to individual-level data and computational capacity
 
-## Their approach (bottom up)
+### Their approach (bottom up)
   - constructing individual-level trajectories
     - hard to track everyone all the time, also a lot of work to analyze this data and ran into data quality issues
     - used trajectory data instead which aggregated individual-level data
@@ -40,9 +40,9 @@ This is my preparation for the dabate on a webinar presented by Xun Shi regardin
     - can identify super-spreader events/individuals
   - simulating epidemic scenarios using derived characteristics
 
-## Take-aways:
+### Take-aways:
   - use both top down and bottom up in conjunction for modeling diseases
 
 
-## Questions:
+### Questions:
   - Ethics: data consent and enforcing protections on big data, how to reconcile that with open source?
