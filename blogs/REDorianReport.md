@@ -30,7 +30,7 @@ In his replication study, I will examine Twitter activity around the Los Angeles
 
 ## Original Study Information
 
-Holler (2021) loosely replicated the methods of Wang et al (2016) for the case of Hurricane Dorian's landfall on the U.S. mainland during the 2019 Atlantic Hurricane season. Data was based on Twitter Search API queries for "fire" and "wildfire". 
+Holler (2021) loosely replicated the methods of Wang et al (2016) for the case of Hurricane Dorian's landfall on the U.S. mainland during the 2019 Atlantic Hurricane season. Data was based on Twitter Search API queries for "fire" and "wildfire".
 
 Holler modified Wang et al's methods by not searching for retweets for network analysis, focusing instead on original Tweet content with keywords hurricane, Dorian, or sharpiegate (a trending hashtag referring to the storm). Holler modified the methodology for normalizing tweet data by creating a normalized Tweet difference index and extended the methodology to test for spatial clustering with the local Getis-Ord statistic. The study tested a hypothesis that false narratives of hurricane risk promulgated at the highest levels of the United States government would significantly distort the geographic distribution of Twitter activity related to the hurricane and its impacts, finding that original Twitter data still clustered only in the affected areas of the Atlantic coast in spite of false narratives about risk of a westward track through Alabama.
 
@@ -50,19 +50,19 @@ Outline the data to be used in your replication study, including:
 ## Replication Results
 
 ![temporal analysis graph](RE-Dorian/covidtweetsbyhours.png)
-Figure 1. Amount of COVID-19 vaccine tweets from May 14th to May 20th 2021.
+Figure 1. Number of COVID-19 vaccine tweets from May 14th to May 20th 2021.
 
 ![content analysis graph](RE-Dorian/uniquewords.png)
-Figure 2. Number of times most frequently tweeted words appeared during this study period.
+Figure 2. Frequency of most commonly tweeted words that appeared during this study period.
 
 ![word pair network](RE-Dorian/wordnetwork.png)
-Figure 3. Word pair network of words commonly associated with each other in tweets during this study period.
+Figure 3. Word pair network of words commonly found together in tweets during this study period.
 
 ![map of twitter activity](RE-Dorian/mapcovidtweets.png)
-Figure 4. Locations of covid-vaccine related tweets in the Western half of the U.S.
+Figure 4. Tweet locations of posts related to the Covid-19 vaccine in the Western half of the U.S.
 
 ![hot spot analysis](RE-Dorian/mapclusterscovidtwitter.png)
-Figure 5. Hot and cold spots for covid-related Twitter activity in the Western half of the U.S.
+Figure 5. Hot and cold spots for Covid-19 related Twitter activity in the Western half of the U.S.
 
 ## Unplanned Deviations from the Protocol
 
