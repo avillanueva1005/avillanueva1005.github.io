@@ -39,15 +39,9 @@ The replication study by Holler (2021) used R, including the rtweet, rehydratoR,
 
 ## Materials and Procedure
 
-Outline the data to be used in your replication study, including:
+My methodology followed the procedure used by Holler (2021) with the exception that I modified the Twitter Search API queries to be "covid", "coronavirus", and "vaccine". The dates used were also different from Holler (2021) because I conducted this query on May 20th and therefore the data used for this replication study ranged from May 14th to May 20th 2021. Additionally, I focussed my replication study on the Greater Los Angeles area (31N,-118W) with a 1000 mile radius. From this query, I collected data for nearly the entire western half of the United States and part of northern Mexico, however the Mexican tweets were not included in the spatial cluster analysis because county population data from the U.S. Census was used to normalize the Twitter data. I also collected all Twitter data from the same time period with the same geographic range to calculate a normalized difference index.
 
-- twitter search parameters
-[Covid-19 twitter search status id](RE-Dorian/public/covidids.txt)
-[general May twitter search status id](RE-Dorian/public/mayids.txt)
-- any data used to normalize the tweets
-- methods for analysis / synthesis
-
-My methodology followed the procedure used by Holler (2021) with the exception that I modified the Twitter Search API queries to be "covid", "coronavirus", and "vaccine". The dates used were also different from Holler (2021) because I conducted this query on May 20th and the data used for this replication study ranged from May 14th to May 20th 2021. Additionally, I focussed my replication study on the Greater Los Angeles area using the coordinates ()
+The raw data was cleaned, geographic location was converted in latitude and longitude coordinates, and the Twitter status ids for the [Covid-19 vaccine search](RE-Dorian/public/covidids.txt) as well for the [general May search](RE-Dorian/public/mayids.txt) were saved. This filtered Twitter data was analyzed to examine the number of Covid-19 vaccine related tweets over the data collection period from May 14-20, 2021 (Figure 1), the frequency of the most common words used in the Covid-19 vaccine Twitter API search (Figure 2), and also the words most frequently associated with each other in a word pair network 
 
 ## Replication Results
 
@@ -60,7 +54,7 @@ Figure 2. Frequency of most commonly tweeted words that appeared during this stu
 ![word pair network](RE-Dorian/wordnetwork.png)
 Figure 3. Word pair network of words commonly found together in tweets during this study period.
 
-![map of twitter activity](RE-Dorian/mapcovidtweets.png)
+![map of Twitter activity](RE-Dorian/mapcovidtweets.png)
 Figure 4. Tweet locations of posts related to the Covid-19 vaccine in the Western half of the U.S.
 
 ![hot spot analysis](RE-Dorian/mapclusterscovidtwitter.png)
@@ -88,7 +82,7 @@ counties = counties %>%
       ))
 --Set counties with no points to 0 for the november count
 --Calculate the normalized difference tweet index (made this up, based on NDVI), where
---ndti = (tweets about storm – baseline twitter activity) / (tweets about storm + baseline twitter activity)
+--ndti = (tweets about storm – baseline Twitter activity) / (tweets about storm + baseline Twitter activity)
 dorian = dorian %>%
   mutate(
     normalizeddiff = (length(dorian$text)-length(november$text))/(length(dorian$text)+length(november$text))
