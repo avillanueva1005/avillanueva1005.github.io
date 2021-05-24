@@ -47,6 +47,8 @@ Outline the data to be used in your replication study, including:
 - any data used to normalize the tweets
 - methods for analysis / synthesis
 
+My methodology followed the procedure used by Holler (2021) with the exception that I modified the Twitter Search API queries to be "covid", "coronavirus", and "vaccine". The dates used were also different from Holler (2021) because I conducted this query on May 20th and the data used for this replication study ranged from May 14th to May 20th 2021. Additionally, I focussed my replication study on the Greater Los Angeles area using the coordinates ()
+
 ## Replication Results
 
 ![temporal analysis graph](RE-Dorian/covidtweetsbyhours.png)
@@ -102,6 +104,7 @@ mutate(
 ## Discussion
 
 Provide a summary and interpretation of your key findings in relation to your research question. Mention if findings confirm or contradict patterns observed by Wang et al (2016) or by Holler (2021)
+
 
 ## Conclusion
 
