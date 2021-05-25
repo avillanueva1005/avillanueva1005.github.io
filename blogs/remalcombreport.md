@@ -148,7 +148,7 @@ This dataset uses the Standardized Precipitation Index to measure annual drought
             - use bilinear resampling for drought to average continuous population exposure values
             - use nearest-neighbor resampling for flood risk to preserve integer values
 
--Sources: [UNEP/GRID-Europe](https://preview.grid.unep.ch)
+- Sources: [UNEP/GRID-Europe](https://preview.grid.unep.ch)
 Global Risk Data Platform: Data-Download. (2013). Global Risk Data Platform. https://preview.grid.unep.ch/index.php?preview=data&lang=eng
 Drought: Physical exposition to droughts events 1980-2001
 https://preview.grid.unep.ch/index.php?preview=data&events=droughts&evcat=4&lang=eng
