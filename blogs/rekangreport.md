@@ -14,7 +14,7 @@ Alitzel Villanueva
 Replication Materials Available at: [RE-Kang](https://github.com/avillanueva1005/RE-Kang)
 
 Created: `24 May 2021`
-Revised: `24 May 2021`
+Revised: `25 May 2021`
 
 # Introduction
 explaining the interest and purpose in reproducing the Kang et al (2020) study, and very briefly introducing what the study was about.
