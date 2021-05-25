@@ -39,20 +39,20 @@ Missing data is a common occurrence in this dataset as a result of negligence or
 The DHS website acknowledges the high potential for inconsistent or incomplete data in such broad and expansive survey sets. Missing survey data (responses) are never estimated or made up; they are instead coded as a special response indicating the absence of data. As well, there are clear policies in place to ensure the data’s accuracy. More information about data validity can be found on the [DHS’s Data Quality and Use site](https://www.dhsprogram.com/data/Data-Quality-and-Use.cfm).
 In this analysis, we use the variables listed in **Table 1** to determine the average adaptive capacity of each TA area. Data transformations are outlined below.
 
-- *Transformations*:
-      - Eliminate households with null and/or missing values
-      - Join TA and LHZ ID data to the DHS clusters
-      - Pre-process the livestock data:
-      - Eliminate NA values for livestock
-      - Sum counts of all different kinds of livestock into a single variable
-      - Normalize each indicator variable and rescale from 1-5 (real numbers) based on percent rank
-      - Apply weights to normalized indicator variables to get scores for each category (assets, access)
-      - find the stats of the capacity of each TA (min, max, mean, sd)
-      - Join ta_capacity to TA based on ta_id
-      - Prepare breaks for mapping
-      - Class intervals based on capacity_2010 field
-      - Take the values and round them to 2 decimal places
-      - Put data in 4 classes based on break values
+*Transformations*:
+- Eliminate households with null and/or missing values
+- Join TA and LHZ ID data to the DHS clusters
+- Pre-process the livestock data:
+- Eliminate NA values for livestock
+- Sum counts of all different kinds of livestock into a single variable
+- Normalize each indicator variable and rescale from 1-5 (real numbers) based on percent rank
+- Apply weights to normalized indicator variables to get scores for each category (assets, access)
+- find the stats of the capacity of each TA (min, max, mean, sd)
+- Join ta_capacity to TA based on ta_id
+- Prepare breaks for mapping
+- Class intervals based on capacity_2010 field
+- Take the values and round them to 2 decimal places
+- Put data in 4 classes based on break values
 
 **Table 1**: DHS Variables used in Analysis
 
@@ -104,49 +104,49 @@ The LHZ data variables are outlined in **Table 2**. The four categories used to 
 | Percent of income from cash crops  | 4%  | sources of cash (Crops): (tobacco + sugar + tea + coffee) + / total sources of cash * 100  |
 | Disaster coping strategy  | 4%  | Self-employment & small business and trade: (firewood + sale of wild food + grass + mats + charcoal) / total sources of cash * 100  |
 
-- *Variables*
-      - *17 livelihood zones*
-        - Livelihood zones created through: “The approach is to identify those factors (such as climate, soil, proximity to rivers, access to markets etc.) that determine the basic food and income options (the crops that will grow, the livestock that can be raised, the wild plants that can be collected, the fish that can be caught, and so on) and then to group similar areas together. In the case of Malawi, the exercise was one of updating an earlier food economy zone map prepared by Save the Children dating from 1996.” (2)
-        - The data we used is just to extract the geometries of the livelihood zone data and basically create the geometry boundaries of Malawi for processing to determine park boundaries
-      - *FEWSnet data*
-        - Percent of food from own farm (6%)
-        - Percent of income from wage labor (6%)
-          - Payment in cash: labour, employment, and remittances
-        - Percent of income from cash crops (4%)
-          - Crop = tobacco-burley, tobacco-oriental, cotton, sugar cane, maize, tea, coffee
-        - Disaster coping strategy (4%)
+*Variables*
+- *17 livelihood zones*
+    - Livelihood zones created through: “The approach is to identify those factors (such as climate, soil, proximity to rivers, access to markets etc.) that determine the basic food and income options (the crops that will grow, the livestock that can be raised, the wild plants that can be collected, the fish that can be caught, and so on) and then to group similar areas together. In the case of Malawi, the exercise was one of updating an earlier food economy zone map prepared by Save the Children dating from 1996.” (2)
+    - The data we used is just to extract the geometries of the livelihood zone data and basically create the geometry boundaries of Malawi for processing to determine park boundaries
+- *FEWSnet data*
+    - Percent of food from own farm (6%)
+    - Percent of income from wage labor (6%)
+      - Payment in cash: labour, employment, and remittances
+    - Percent of income from cash crops (4%)
+      - Crop = tobacco-burley, tobacco-oriental, cotton, sugar cane, maize, tea, coffee
+    - Disaster coping strategy (4%)
 
-- *Transformations*
-Join with DHS clusters to apply LHZ FNID variables
-Clip TA boundaries to Malawi (st_buffer of LHZ to .01 m)
-Create ecological areas: LHZ boundaries intersected with TA boundaries to clip out park/conservation boundaries and rename those park areas with the park information from TA data), combined with lake data to remove environmental areas from the analysis
+*Transformations*
+- Join with DHS clusters to apply LHZ FNID variables
+- Clip TA boundaries to Malawi (st_buffer of LHZ to .01 m)
+- Create ecological areas: LHZ boundaries intersected with TA boundaries to clip out park/conservation boundaries and rename those park areas with the park information from TA data), combined with lake data to remove environmental areas from the analysis
 
 - Source: Download https://fews.net/data_portal_download/download?data_file_path=http%3A//shapefiles.fews.net.s3.amazonaws.com/LHZ/MW_LHZ_2009.zip
 - Sources: Malawi Baseline Livelihood Profiles, Version 1* (September 2005). Made by Malawi National Vulnerability Assessment Committee in collaboration with the SADC FANR Vulnerability Assessment Committee -- file in metadata called mw_baseline_rural_en_2005.pdf
 
 #### **Physical Exposure**
 
-- *Physical Exposure: Floods*
-        - Dataset title: “Global estimated risk index for flood hazard”
-        - “This dataset includes an estimate of the global risk induced by flood hazard. Unit is estimated risk index from 1 (low) to 5 (extreme). This product was designed by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR). It was modeled using global data. Credit: UNEP/GRID-Europe.”
+*Physical Exposure: Floods*
+- Dataset title: “Global estimated risk index for flood hazard”
+- “This dataset includes an estimate of the global risk induced by flood hazard. Unit is estimated risk index from 1 (low) to 5 (extreme). This product was designed by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR). It was modeled using global data. Credit: UNEP/GRID-Europe.”
 
 This dataset stems from work collected by multiple agencies and funneled into the PREVIEW Global Risk Data Platform, “an effort to share spatial information on global risk from natural hazards.” The dataset was designed by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR), using global data. A flood estimation value is assigned via an index of 1 (low) to 5 (extreme).
 
-- *Physical Exposure: Physical exposition to droughts events 1980-2001*
+*Physical Exposure: Physical exposition to droughts events 1980-2001*
 
 This dataset uses the Standardized Precipitation Index to measure annual drought exposure across the globe. The Standardized Precipitation Index draws on data from a “global monthly gridded precipitation dataset” from the University of East Anglia’s Climatic Research Unit, and was modeled in GIS using methodology from Brad Lyon at Columbia University. The dataset draws on 2010 population information from the LandScanTM Global Population Database at the Oak Ridge National Laboratory.  Drought exposure is reported as the expected average annual (2010) population exposed. The data were compiled by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR). The data use the WGS 1984 datum, span the years 1980-2001, and are reported in raster format with spatial resolution 1/24 degree x 1/24 degree.
 
-- *Variables*
-        - Estimated risk for flood hazard
-        - Exposition to drought events
+*Variables*
+- Estimated risk for flood hazard
+- Exposition to drought events
 
-- *Transformations*
-        - Load in UNEP raster
-          - Set CRS for drought to EPSG:4326
-          - Set CRS for flood to EPSG:4326
-          - Reproject, clip, and resample based on bounding box (dimensions: xmin = 35.9166666666658188, xmax = 32.6666666666658330,  ymin = -9.3333333333336554, ymax = -17.0833333333336270) and resolution of blank raster we created: resolution is 1/24 degree x 1/24 degree
-            - use bilinear resampling for drought to average continuous population exposure values
-            - use nearest-neighbor resampling for flood risk to preserve integer values
+*Transformations*
+- Load in UNEP raster
+  - Set CRS for drought to EPSG:4326
+  - Set CRS for flood to EPSG:4326
+  - Reproject, clip, and resample based on bounding box (dimensions: xmin = 35.9166666666658188, xmax = 32.6666666666658330,  ymin = -9.3333333333336554, ymax = -17.0833333333336270) and resolution of blank raster we created: resolution is 1/24 degree x 1/24 degree
+    - use bilinear resampling for drought to average continuous population exposure values
+    - use nearest-neighbor resampling for flood risk to preserve integer values
 
 - Sources: [UNEP/GRID-Europe](https://preview.grid.unep.ch)
 Global Risk Data Platform: Data-Download. (2013). Global Risk Data Platform. https://preview.grid.unep.ch/index.php?preview=data&lang=eng
