@@ -16,7 +16,7 @@ Alitzel Villanueva
 Replication Materials Available at: [RE-Dorian](https://github.com/avillanueva1005/RE-Dorian)
 
 Created: `19 May 2021`
-Revised: `24 May 2021`
+Revised: `25 May 2021`
 
 ## Abstract
 
@@ -26,7 +26,7 @@ Wang et al. (2016) analyzed Twitter data for wildfires in California, finding th
 
 Holler (2021) is studying Twitter data for Hurricane Dorian on the Atlantic coast, finding that in spite of trending news and social media content regarding a false narrative of risk, original Tweets still clustered significantly along the real hurricane track, and only along the hurricane track. Reproducing and replicating spatial research of Wang et al. and Holler continues to be relevant because of its accessibility and usefulness to supplement natural disaster preparation and responses. Furthermore, the use of social media data to conduct spatial research also can be helpful in further understanding other important emergency/current events to respond to additional community needs such as Covid-19 vaccine distribution. The use of social media in these kinds of events can benefit local and federal vaccine roll outs, for example, as people's attitudes and needs are publicized online.
 
-In his replication study, I will examine Twitter activity around the Los Angeles area, specifically looking at Covid-19 vaccine posts from May 14-20, 2021.
+In this replication study, I will examine Twitter activity around the Los Angeles area, specifically looking at Covid-19 vaccine posts from May 14-20, 2021.
 
 ## Original Study Information
 
@@ -63,37 +63,6 @@ Figure 5. Hot and cold spots for Covid-19 related Twitter activity in the Wester
 ## Unplanned Deviations from the Protocol
 
 Aside from initial changes to the Holler (2021) code on the Twitter Search API queries and geographic search location used, the workflow for the final analysis did not change from the initial code that was used to analyze Hurricane Dorian related tweets in Holler (2021). I did not complete the Hurricane Dorian spatial analysis in PostGIS, but instead calculated the normalized difference tweet index in R. However, I did not end up using this code for the final Covid-19 vaccine analysis, but instead used the final code used by Holler (2021).
-
-```
---Count the number of dorian points in each county
-counties = counties %>%
-  mutate(
-    doriancount = st_intersects(counties$geometry, doraingeom$geometry) %>%
-  lengths(
-  ))
---Count the number of november points in each county
-novgeom <-st_as_sf(november, coords = c("lng","lat")) %>%
-  st_set_crs(4326) %>%
-  st_transform(4269)
-counties = counties %>%
-  mutate(
-    novcount = st_intersects(counties$geometry, novgeom$geometry) %>%
-      lengths(
-      ))
---Set counties with no points to 0 for the november count
---Calculate the normalized difference tweet index (made this up, based on NDVI), where
---ndti = (tweets about storm – baseline Twitter activity) / (tweets about storm + baseline Twitter activity)
-dorian = dorian %>%
-  mutate(
-    normalizeddiff = (length(dorian$text)-length(november$text))/(length(dorian$text)+length(november$text))
-  )
-
-random = dorian %>%
-mutate(
-  normalizeddiff = (n()-nrow(november))/(n()+nrow(november))
-) %>%
-  select(normalizeddiff)
-```
 
 ## Discussion
 
