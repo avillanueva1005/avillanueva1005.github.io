@@ -70,10 +70,7 @@ Over time there was a steady decline in the number of Covid-19 related tweets wh
 
 ## Conclusion
 
-Restate the key findings and discuss their broader societal implications or contributions to theory.
-Do the research findings suggest a need for any future research?
-
-In conclusion, 
+In conclusion, Covid-19 vaccine related tweets temporally correlated to recent news about expansions of vaccine roll outs and how several vaccinated baseball team staff members had tested positive days prior to the study period. Both of these examples shows how time is relevant to Twitter data. Additionally, the correlation between tweet location clusters / hot spots of Covid-19 normalized tweets and densely populated areas supports Wang et al's conclusions of larger numbers of tweets centering where there are larger populations to tweet this information. However, unlike Wang et al. these clusters may not cloud the results, but instead indicate the higher need for vaccines in these densely populated areas. Due to the controversial nature about vaccinations, there is a need for more research on the political affiliations and their connections to attitudes on vaccinations. Seeing how not all densely populated areas had hot spots of Covid-19 normalized tweets, but in the central part of the U.S. there were actually cold spots implying a lack of need for vaccinations despite high population numbers, interestingly enough.  
 
 ## References
 
