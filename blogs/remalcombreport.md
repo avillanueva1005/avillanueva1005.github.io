@@ -32,17 +32,12 @@ The original study was published without data or code, but has detailed narrativ
 
 This section was written collaboratively with: Maja Cannavo, Emma Clinton, Jacob Freedman, Nick Nonnenmacher, and Drew An-Pham.
 
-FEWSnet data
-Percent of food from own farm (6%)
-Percent of income from wage labor (6%)
-Percent of income from cash crops (4%)
-Disaster coping strategy (4%)
-
 # *Assets & Access*
-Source: The DHS Program—Data. (2010). The DHS Program--USAID. Retrieved April 19, 2021, from https://dhsprogram.com/Data/
-Collected by trained USAID staff using GPS receivers
-GPS readings correspond to center of household cluster (one randomized point per household cluster)
+- Source: The DHS Program—Data. (2010). The DHS Program--USAID. Retrieved April 19, 2021, from https://dhsprogram.com/Data/
+- Collected by trained USAID staff using GPS receivers
+      - GPS readings correspond to center of household cluster (one randomized point per household cluster)
 
+Table 1: DHS Variables used in Analysis
 | Variable Code | Definition |
 | ------------- | ------------- |
 | HHID | "Case Identification" |
