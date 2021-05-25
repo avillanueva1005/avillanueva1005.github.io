@@ -10,9 +10,9 @@ title: RP- Vulnerability modeling for sub-Saharan Africa
 Original study *by* Malcomb, D. W., E. A. Weaver, and A. R. Krakowka. 2014. Vulnerability modeling for sub-Saharan Africa: An operationalized approach in Malawi. *Applied Geography* 48:17–30. DOI:[10.1016/j.apgeog.2014.01.004](https://doi.org/10.1016/j.apgeog.2014.01.004)
 
 Replication Authors:
-Alitzel Villanueva, Joseph Holler, Kufre Udoh, Open Source GIScience students of fall 2019 and Spring 2021
+Alitzel Villanueva, Joseph Holler, Kufre Udoh, Open Source GIScience students of fall 2019, and group collaborators: [Drew An-Pham](https://daptx.github.io/malcomb/RP-Malcomb-Report.html), [Emma Clinton](https://emmaclinton.github.io/malcomb/RP-Malcomb-Report.html), [Jacob Freedman](https://jafreedman12.github.io/rp-malcomb-report/RP-Malcomb-Report.html), [Maja Cannavo](https://majacannavo.github.io/geog323/portfolio/malcomb/rp-malcomb), and [Nick Nonnenmacher](https://nicknonnen.github.io/malcomb/RP-Malcomb-Report.html).
 
-Replication Materials Available at: [github repository name](github repository link)
+Replication Materials Available at: [Re-Malcomb](https://github.com/avillanueva1005/RE-Malcomb-1)
 
 Created: `25 May 2021`
 Revised: `25 May 2021`
@@ -30,17 +30,7 @@ The original study was published without data or code, but has detailed narrativ
 
 ### Data Description and Variables
 
-Outline the data used in the study, including:
-
-- sources of each data layer and
-- the variable(s) used from each data source
-- transformations applied to the variables (e.g. rescaling variables, calculating derived variables, aggregating to different geographic units, etc.)
-
-Investigating Data Sources:
-
-Complete data section for your report (data sources, transformations, and important characteristics for research and research validity, e.g. time-scale, spatial scale, missing data, provenance). Feel free to divide up the task of looking into different datasets & variables. As part of this group task, you should decide how you need to use the FEWSnet Livelihood Zones data and create a single data table of required variables by livelihood zone.
-
-Data section:
+This section was written collaboratively with: Maja Cannavo, Emma Clinton, Jacob Freedman, Nick Nonnenmacher, and Drew An-Pham.
 
 FEWSnet data
 Percent of food from own farm (6%)
@@ -48,11 +38,7 @@ Percent of income from wage labor (6%)
 Percent of income from cash crops (4%)
 Disaster coping strategy (4%)
 
-
-FROM THE SQL DOCUMENT:
-### Data Description and Variables
-
-# Assets & Access
+# *Assets & Access*
 Source: The DHS Program—Data. (2010). The DHS Program--USAID. Retrieved April 19, 2021, from https://dhsprogram.com/Data/
 Collected by trained USAID staff using GPS receivers
 GPS readings correspond to center of household cluster (one randomized point per household cluster)
@@ -77,7 +63,7 @@ GPS readings correspond to center of household cluster (one randomized point per
 | HV206 |"Has electricty” |
  |HV204 |“Time to get to Water Source”|
 
-Transformations:
+- Transformations:
 Eliminate households with null and/or missing values
 Join TA and LHZ ID data to the DHS clusters
 Pre-process the livestock data:
@@ -108,9 +94,9 @@ Source: http://www.masdap.mw/
 Taken from OSM
 Transformations: used in EA variable to classify major lakes as such in final representation
 
-# Livelihood Zones:
-	The Livelihood zone data is created by aggregating general regions where similar crops are grown and similar ecological patterns exist. This data exists originally at the household level and was aggregated into Livelihood Zones. To construct the aggregation used for “Livelihood Sensitivity” in this analysis, we use these household points from the FEWSnet data that had previously been aggregated into livelihood zones. The four Livelihood Sensitivity categories are 1) Percent of food from own farm (6%); 2) Percent of income from wage labor (6%); 3) Percent of income from cash crops (4%); and 4) Disaster coping strategy (4%). In the original R script, household data from the DHS survey was used as a proxy for the specific data points in the livelihood sensitivity analysis (transformation: Join with DHS clusters to apply LHZ FNID variables). With this additional FEWSnet data at the household level, we can construct these four livelihood sensitivity categories using existing variables (Table 1).
-	The LHZ data variables are outlined in **Table 2**. The four categories used to determine livelihood sensitivity were ranked from 1-5 based on percent rank values and then weighted using values taken from Malcomb et al. (2014).
+# *Livelihood Zones*
+The Livelihood zone data is created by aggregating general regions where similar crops are grown and similar ecological patterns exist. This data exists originally at the household level and was aggregated into Livelihood Zones. To construct the aggregation used for “Livelihood Sensitivity” in this analysis, we use these household points from the FEWSnet data that had previously been aggregated into livelihood zones. The four Livelihood Sensitivity categories are 1) Percent of food from own farm (6%); 2) Percent of income from wage labor (6%); 3) Percent of income from cash crops (4%); and 4) Disaster coping strategy (4%). In the original R script, household data from the DHS survey was used as a proxy for the specific data points in the livelihood sensitivity analysis (transformation: Join with DHS clusters to apply LHZ FNID variables). With this additional FEWSnet data at the household level, we can construct these four livelihood sensitivity categories using existing variables (Table 1).
+The LHZ data variables are outlined in **Table 2**. The four categories used to determine livelihood sensitivity were ranked from 1-5 based on percent rank values and then weighted using values taken from Malcomb et al. (2014).
 
 Table 2: Constructing livelihood sensitivity categories
 
@@ -120,7 +106,6 @@ Table 2: Constructing livelihood sensitivity categories
 | Percent of income from wage labor  | 6%  | Sources of cash: labour etc. / total * 100  |
 | Percent of income from cash crops  | 4%  | sources of cash (Crops): (tobacco + sugar + tea + coffee) + / total sources of cash * 100  |
 | Disaster coping strategy  | 4%  | Self-employment & small business and trade: (firewood + sale of wild food + grass + mats + charcoal) / total sources of cash * 100  |
-
 
 
 Source: Download https://fews.net/data_portal_download/download?data_file_path=http%3A//shapefiles.fews.net.s3.amazonaws.com/LHZ/MW_LHZ_2009.zip
@@ -141,7 +126,7 @@ Join with DHS clusters to apply LHZ FNID variables
 Clip TA boundaries to Malawi (st_buffer of LHZ to .01 m)
 Create ecological areas: LHZ boundaries intersected with TA boundaries to clip out park/conservation boundaries and rename those park areas with the park information from TA data), combined with lake data to remove environmental areas from the analysis
 
-# Physical Exposure
+# *Physical Exposure*
 
 - Physical Exposure: Floods
 Source: https://preview.grid.unep.ch
@@ -151,8 +136,6 @@ This dataset stems from work collected by multiple agencies and funneled into th
 
 - Physical Exposure: Physical exposition to droughts events 1980-2001
 This dataset uses the Standardized Precipitation Index to measure annual drought exposure across the globe. The Standardized Precipitation Index draws on data from a “global monthly gridded precipitation dataset” from the University of East Anglia’s Climatic Research Unit, and was modeled in GIS using methodology from Brad Lyon at Columbia University. The dataset draws on 2010 population information from the LandScanTM Global Population Database at the Oak Ridge National Laboratory.  Drought exposure is reported as the expected average annual (2010) population exposed. The data were compiled by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR). The data use the WGS 1984 datum, span the years 1980-2001, and are reported in raster format with spatial resolution 1/24 degree x 1/24 degree.
-
-
 
 
 Physical Exposure
@@ -172,11 +155,6 @@ Set CRS for flood to EPSG:4326
 Reproject, clip, and resample based on bounding box (dimensions: xmin = 35.9166666666658188, xmax = 32.6666666666658330,  ymin = -9.3333333333336554, ymax = -17.0833333333336270) and resolution of blank raster we created: resolution is 1/24 degree x 1/24 degree
 use bilinear resampling for drought to average continuous population exposure values
 use nearest-neighbor resampling for flood risk to preserve integer values
-
-
-Make amendments to your pre-analysis plan markdown document.
-When you are finished, commit and push the changes, and create a second release titled RP-Malcomb-Preanalysis-Plan-Data and note in the description that this pre-analysis plan was amended after investigating all data sources for the study, but prior to starting any analysis.
-
 
 ### Analytical Specification
 
