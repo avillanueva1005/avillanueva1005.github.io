@@ -31,7 +31,7 @@ The original study was published without data or code, but has detailed narrativ
 
 This section was written collaboratively with: Maja Cannavo, Emma Clinton, Jacob Freedman, Nick Nonnenmacher, and Drew An-Pham.
 
-#### *Assets & Access*
+#### **Assets & Access**
 
 Demographic and Health Survey data are a product of the United States Agency for International Development (USAID). Variables contained in this dataset are used to represent adaptive capacity (access + assets) in the Malcomb et al.’s (2014) study. These data come from survey questionnaires with large sample sizes.
 The DHS data used in our study were collected in 2010. In Malawi, the provenance of the DHA data dates back as far as 1992, but has not been collected consistently every year. Each point in the household dataset represents a cluster of households with each cluster corresponding to some form of census enumeration units, such as villages in rural areas or city blocks in urban areas [DHS GPS Manual](/data/metadata/DHS_GPS_Manual_English_A4_24May2013_DHSM9.pdf). This means that each household in each cluster has the same GPS data. This data is collected by trained [USAID](https://www.usaid.gov/) staff using GPS receivers.
@@ -39,7 +39,7 @@ Missing data is a common occurrence in this dataset as a result of negligence or
 The DHS website acknowledges the high potential for inconsistent or incomplete data in such broad and expansive survey sets. Missing survey data (responses) are never estimated or made up; they are instead coded as a special response indicating the absence of data. As well, there are clear policies in place to ensure the data’s accuracy. More information about data validity can be found on the [DHS’s Data Quality and Use site](https://www.dhsprogram.com/data/Data-Quality-and-Use.cfm).
 In this analysis, we use the variables listed in **Table 1** to determine the average adaptive capacity of each TA area. Data transformations are outlined below.
 
-- **Transformations**:
+- *Transformations*:
       - Eliminate households with null and/or missing values
       - Join TA and LHZ ID data to the DHS clusters
       - Pre-process the livestock data:
@@ -76,22 +76,22 @@ In this analysis, we use the variables listed in **Table 1** to determine the av
 | HV206 |"Has electricty” |
  |HV204 |“Time to get to Water Source”|
 
-**Demographic and Health Surveys Program**
+*Demographic and Health Surveys Program*
 - Source: The DHS Program—Data. (2010). The DHS Program--USAID. Retrieved April 19, 2021, from https://dhsprogram.com/Data/
 - Collected by trained [USAID](https://www.usaid.gov/) staff using GPS receivers
       - GPS readings correspond to center of household cluster (one randomized point per household cluster)
 
-**Malawi Traditional Authorities**
+*Malawi Traditional Authorities*
 - Source: Download GADM data (version 2.8). (2018). Database of Global Administrative Areas. https://gadm.org/download_country_v2.html
 
-**Major Lakes**
+*Major Lakes*
 - Source: http://www.masdap.mw/
  Taken from OSM
  Transformations: used in EA variable to classify major lakes as such in final representation
 
 Clara R. Burgert Blake Zachary Josh Colston — Authors of DHS document
 
-#### *Livelihood Zones*
+#### **Livelihood Zones**
 The Livelihood zone data is created by aggregating general regions where similar crops are grown and similar ecological patterns exist. This data exists originally at the household level and was aggregated into Livelihood Zones. To construct the aggregation used for “Livelihood Sensitivity” in this analysis, we use these household points from the FEWSnet data that had previously been aggregated into livelihood zones. The four Livelihood Sensitivity categories are 1) Percent of food from own farm (6%); 2) Percent of income from wage labor (6%); 3) Percent of income from cash crops (4%); and 4) Disaster coping strategy (4%). In the original R script, household data from the DHS survey was used as a proxy for the specific data points in the livelihood sensitivity analysis (transformation: Join with DHS clusters to apply LHZ FNID variables). With this additional FEWSnet data at the household level, we can construct these four livelihood sensitivity categories using existing variables (Table 1).
 The LHZ data variables are outlined in **Table 2**. The four categories used to determine livelihood sensitivity were ranked from 1-5 based on percent rank values and then weighted using values taken from Malcomb et al. (2014).
 
@@ -104,11 +104,11 @@ The LHZ data variables are outlined in **Table 2**. The four categories used to 
 | Percent of income from cash crops  | 4%  | sources of cash (Crops): (tobacco + sugar + tea + coffee) + / total sources of cash * 100  |
 | Disaster coping strategy  | 4%  | Self-employment & small business and trade: (firewood + sale of wild food + grass + mats + charcoal) / total sources of cash * 100  |
 
-- **Variables**
-      - **17 livelihood zones**
+- *Variables*
+      - *17 livelihood zones*
         - Livelihood zones created through: “The approach is to identify those factors (such as climate, soil, proximity to rivers, access to markets etc.) that determine the basic food and income options (the crops that will grow, the livestock that can be raised, the wild plants that can be collected, the fish that can be caught, and so on) and then to group similar areas together. In the case of Malawi, the exercise was one of updating an earlier food economy zone map prepared by Save the Children dating from 1996.” (2)
         - The data we used is just to extract the geometries of the livelihood zone data and basically create the geometry boundaries of Malawi for processing to determine park boundaries
-      - **FEWSnet data**
+      - *FEWSnet data*
         - Percent of food from own farm (6%)
         - Percent of income from wage labor (6%)
           - Payment in cash: labour, employment, and remittances
@@ -116,7 +116,7 @@ The LHZ data variables are outlined in **Table 2**. The four categories used to 
           - Crop = tobacco-burley, tobacco-oriental, cotton, sugar cane, maize, tea, coffee
         - Disaster coping strategy (4%)
 
-- **Transformations**
+- *Transformations*
 Join with DHS clusters to apply LHZ FNID variables
 Clip TA boundaries to Malawi (st_buffer of LHZ to .01 m)
 Create ecological areas: LHZ boundaries intersected with TA boundaries to clip out park/conservation boundaries and rename those park areas with the park information from TA data), combined with lake data to remove environmental areas from the analysis
@@ -124,23 +124,23 @@ Create ecological areas: LHZ boundaries intersected with TA boundaries to clip o
 - Source: Download https://fews.net/data_portal_download/download?data_file_path=http%3A//shapefiles.fews.net.s3.amazonaws.com/LHZ/MW_LHZ_2009.zip
 - Sources: Malawi Baseline Livelihood Profiles, Version 1* (September 2005). Made by Malawi National Vulnerability Assessment Committee in collaboration with the SADC FANR Vulnerability Assessment Committee -- file in metadata called mw_baseline_rural_en_2005.pdf
 
-#### *Physical Exposure*
+#### **Physical Exposure**
 
-- **Physical Exposure: Floods**
+- *Physical Exposure: Floods*
         - Dataset title: “Global estimated risk index for flood hazard”
         - “This dataset includes an estimate of the global risk induced by flood hazard. Unit is estimated risk index from 1 (low) to 5 (extreme). This product was designed by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR). It was modeled using global data. Credit: UNEP/GRID-Europe.”
 
 This dataset stems from work collected by multiple agencies and funneled into the PREVIEW Global Risk Data Platform, “an effort to share spatial information on global risk from natural hazards.” The dataset was designed by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR), using global data. A flood estimation value is assigned via an index of 1 (low) to 5 (extreme).
 
-- **Physical Exposure: Physical exposition to droughts events 1980-2001**
+- *Physical Exposure: Physical exposition to droughts events 1980-2001*
 
 This dataset uses the Standardized Precipitation Index to measure annual drought exposure across the globe. The Standardized Precipitation Index draws on data from a “global monthly gridded precipitation dataset” from the University of East Anglia’s Climatic Research Unit, and was modeled in GIS using methodology from Brad Lyon at Columbia University. The dataset draws on 2010 population information from the LandScanTM Global Population Database at the Oak Ridge National Laboratory.  Drought exposure is reported as the expected average annual (2010) population exposed. The data were compiled by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR). The data use the WGS 1984 datum, span the years 1980-2001, and are reported in raster format with spatial resolution 1/24 degree x 1/24 degree.
 
-- **Variables**
+- *Variables*
         - Estimated risk for flood hazard
         - Exposition to drought events
 
-- **Transformations**
+- *Transformations*
         - Load in UNEP raster
           - Set CRS for drought to EPSG:4326
           - Set CRS for flood to EPSG:4326
@@ -162,7 +162,7 @@ The replication study will use R.
 
 ## Materials and Procedure
 
-# Process Adaptive Capacity
+#### Process Adaptive Capacity
 1. Bring in DHS Data [Households Level] (vector)
 2. Bring in TA (Traditional Authority boundaries) and LHZ (livelihood zones) data
 3. Get rid of unsuitable households (eliminate NULL and/or missing values)
@@ -181,12 +181,12 @@ The replication study will use R.
       - Put data in 4 classes based on break values
 10. Save the adaptive capacity scores
 
-# Process Livelihood Sensitivity
+#### Process Livelihood Sensitivity
 1. Load in LHZ csv into R
 2. Join LHZ sensitivity data into R code
 3. Create livelihood sensitivity score data based on breakdown provided in report (Table 2)
 
-# Process Physical Exposure
+#### Process Physical Exposure
 1. Load in UNEP rasterSet CRS for drought
 2. Set CRS for flood
 3. Clean and reproject rasters
