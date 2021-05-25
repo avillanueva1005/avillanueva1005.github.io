@@ -176,9 +176,9 @@ The replication study will use R.
 8. Join ta_capacity to TA based on ta_id
 	(Multiply by 20
 9. Prepare breaks for mapping
-      - Class intervals based on capacity_2010 field
-      - Take the values and round them to 2 decimal places
-      - Put data in 4 classes based on break values
+- Class intervals based on capacity_2010 field
+- Take the values and round them to 2 decimal places
+- Put data in 4 classes based on break values
 10. Save the adaptive capacity scores
 
 #### Process Livelihood Sensitivity
@@ -192,16 +192,16 @@ The replication study will use R.
 3. Clean and reproject rasters
 4. Create a bounding box at extent of Malawi Where does this info come from
 5. Add geometry info and precision (st_as_sfc)
-      - For Drought: use bilinear to avg continuous population exposure values
-      - For Flood: use nearest neighbor to preserve integer values
+- For Drought: use bilinear to avg continuous population exposure values
+- For Flood: use nearest neighbor to preserve integer values
 6. CLIP the traditional authorities with the LHZs to cut out the lake
 7. RASTERIZE the ta_capacity data with pixel data corresponding to capacity_2010 field
 8. RASTERIZE the livelihood sensitivity score with pixel data corresponding to capacity_2010 field
 9. RASTER CALCULATOR:
-      - Create a mask
-      - Reclassify the flood layer (quintiles, currently binary)
-      - Reclassify the drought values (quantile [from 0 - 1 in intervals of 0.2 =5])
-      - Add component rasters for final weighted score of drought + flood
+- Create a mask
+- Reclassify the flood layer (quintiles, currently binary)
+- Reclassify the drought values (quantile [from 0 - 1 in intervals of 0.2 =5])
+- Add component rasters for final weighted score of drought + flood
 
 11. AGGREGATE: Create final vulnerability layer using envi. vulnerability score and ta_capacity
 
