@@ -17,8 +17,8 @@ Created: `24 May 2021`
 Revised: `26 May 2021`
 
 # Introduction
-explaining the interest and purpose in reproducing the Kang et al (2020) study, and very briefly introducing what the study was about.
-Kang et al (2020) was heavily influenced by the recent urgent need to know the spatial accessibility of healthcare resources as hundreds of thousands of people were hospitalized last year due to a novel coronavirus disease (COVID-19)
+
+Kang et al (2020) was heavily influenced by the recent urgent need to know the spatial accessibility of healthcare resources as hundreds of thousands of people were hospitalized and died last year due to COVID-19. This study, focussed on Chicago, Illinois, aimed to answer what kind of access people had to healthcare resources during the pandemic, which areas have sufficient and insufficient resources, and what role demographics play in accessibility. Kang et al measured spatial accessibility by calculating the time between homes of COVID-19 patients/vulnerable populations (people over 50 years) and health care resources creating a two-step floating catchment area using Jupyter Notebook to map the hospital and residential locations. Using an open source framework like CyberGIS-Jupyter allows others to amend the code used to create these service areas so that this spatially accessibility model can be applied to other regions of the world to address this issue of universal access that is prevalent as COVID-19 continue to persist.
 
 # Materials and Methods
 briefly explaining and citing what data sources and computational resources were used for the study. The length/depth of this explanation may be similar to your review of the Twitter for Wildfire Hazards paper (Wang et al 2016). Explain any changes you made to the original python notebook / repository.
