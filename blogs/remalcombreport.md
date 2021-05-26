@@ -216,7 +216,7 @@ For each output from the original study (mainly figure 4 and figure 5), present 
 
 ![map of vulnerability in Malawi, analagous to figure 5 of the original study](RE-Malcomb/vulnerability_full.png)
 
-![map of difference between your figure 4 and the original figure 4](RE-Malcomb/fig4_diff_map.png)
+![map of difference between your figure 4 and the original figure 4](RE-Malcomb/fig4_diff.png)
 
 ![map of difference between your figure 5 and the original figure 5](RE-Malcomb/fig5_diff_map.png)
 
