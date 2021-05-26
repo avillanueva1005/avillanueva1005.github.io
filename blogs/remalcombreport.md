@@ -207,11 +207,6 @@ The replication study will use R.
 
 ## Replication Results
 
-For each output from the original study (mainly figure 4 and figure 5), present separately the results of the replication attempt.
-
-2.	State whether the original study was or was not supported by the replication
-3.	State whether any hypothesis linked to a planned deviation from the original study was supported. Provide key statistics and related reasoning.
-
 ![map of resilience by traditional authority in 2010, analagous to figure 4 of the original study](RE-Malcomb/ac_2010.png)
 Figure 1. Map of average Malawi adaptive capacity by traditional authority in 2010, similar to Figure 4 in Malcomb et al.
 
@@ -219,6 +214,12 @@ Figure 1. Map of average Malawi adaptive capacity by traditional authority in 20
 Figure 2. Map of difference between original average adaptive capacity scores and my replication average scores.
 
 Overall, there was little difference between the original map and my replication for adaptive capacity (Figure 1) as seen in Figure 2 where much of the map is covered in minor differences between -1 and 0. The Spearman's Rho value of difference in adaptive capacity was pretty close to 1, at 0.7497 with a p-value of 0, indicating that the Malcomb et al was supported by my replication of mapping adaptive capacity. These similarities between the original study and my replication were predicted due to the lack of planned deviation from Malcomb et al because both the assets and access data were provided in full, allowing for a better replication with all the data for adaptive capacity.
+
+
+For each output from the original study (mainly figure 4 and figure 5), present separately the results of the replication attempt.
+
+2.	State whether the original study was or was not supported by the replication
+3.	State whether any hypothesis linked to a planned deviation from the original study was supported. Provide key statistics and related reasoning.
 
 ![map of vulnerability in Malawi, analagous to figure 5 of the original study](RE-Malcomb/vulnerability_full.png)
 Figure 3. Map of Malawi Vulnerability to Climate Change, similar to figure 5 in Malcomb et al.
@@ -229,7 +230,7 @@ Figure 4. Map of difference between vulnerability from Malcomb et al and vulnera
 ![correlation between raster values of the original and replicated study](RE-Malcomb/00000a.png)
 Figure 5. Scatterplot of vulnerability difference between my replication and Malcomb et al.
 
-
+Malcomb et al. was not supported by my replication (Figure 3), given the Spearman's rho value was 0.2567068 with a p-value of 0. This significant difference between Malcomb et al's vulnerability map and my replication is not clear in Figure 4, however, the lack of any trend in Figure 5 demonstrates the lack of correlation between the original study and my replication more explicitly. This difference between Figure 3 and the original vulnerability map was not surprising given the lack of data from Malcomb et al. This replication attempted to add to the work done previously by Kufre Udoh and Joe Holler to reproduce Malcomb et al's findings. However this was difficult to do without the livelihood sensitivity data that comprised part of the vulnerability information along with the physical exposure data that was provided by Malcomb et al. The ambiguity of the livelihood sensitivity data proved it difficult to accurately reproduce Malcomb et al, explaining why the vulnerability maps are so different between my replication and the original study. 
 
 ## Unplanned Deviations from the Protocol
 
