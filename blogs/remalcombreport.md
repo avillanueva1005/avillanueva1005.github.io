@@ -218,7 +218,7 @@ Figure 1. Map of average Malawi adaptive capacity by traditional authority in 20
 ![map of difference between your figure 4 and the original figure 4](RE-Malcomb/fig4_diff.png)
 Figure 2. Map of difference between original average adaptive capacity scores and my replication average scores.
 
-Overall, there was little difference between the original map and my replication for adaptive capacity (Figure 1) as seen in Figure 2 where much of the map is covered in minor differences between -1 and 0. The Spearman's Rho value of difference in adaptive capacity was pretty close to 1, at 0.7497 with a p-value of 0, indicating that the Malcomb et al was supported by my replication of mapping adaptive capacity. These similarities between the original study and my replication were predicted due to the lack of planned deviation from Malcomb et al because both the assets and access data were provided in full, allowing for a better replication with all the data for adaptive capacity. 
+Overall, there was little difference between the original map and my replication for adaptive capacity (Figure 1) as seen in Figure 2 where much of the map is covered in minor differences between -1 and 0. The Spearman's Rho value of difference in adaptive capacity was pretty close to 1, at 0.7497 with a p-value of 0, indicating that the Malcomb et al was supported by my replication of mapping adaptive capacity. These similarities between the original study and my replication were predicted due to the lack of planned deviation from Malcomb et al because both the assets and access data were provided in full, allowing for a better replication with all the data for adaptive capacity.
 
 ![map of vulnerability in Malawi, analagous to figure 5 of the original study](RE-Malcomb/vulnerability_full.png)
 Figure 3. Map of Malawi Vulnerability to Climate Change, similar to figure 5 in Malcomb et al.
@@ -228,6 +228,8 @@ Figure 4. Map of difference between vulnerability from Malcomb et al and vulnera
 
 ![correlation between raster values of the original and replicated study](RE-Malcomb/00000a.png)
 Figure 5. Scatterplot of vulnerability difference between my replication and Malcomb et al.
+
+
 
 ## Unplanned Deviations from the Protocol
 
