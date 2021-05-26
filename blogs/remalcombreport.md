@@ -213,9 +213,14 @@ For each output from the original study (mainly figure 4 and figure 5), present 
 3.	State whether any hypothesis linked to a planned deviation from the original study was supported. Provide key statistics and related reasoning.
 
 ![map of resilience by traditional authority in 2010, analagous to figure 4 of the original study](RE-Malcomb/ac_2010.png)
+
 ![map of vulnerability in Malawi, analagous to figure 5 of the original study](RE-Malcomb/vulnerability_full.png)
+
 ![map of difference between your figure 4 and the original figure 4](RE-Malcomb/fig4_diff_map.png)
+
 ![map of difference between your figure 5 and the original figure 5](RE-Malcomb/fig5_diff_map.png)
+
+![correlation between raster values of the original and replicated study](RE-Malcomb/000007.png)
 
 ## Unplanned Deviations from the Protocol
 
