@@ -220,7 +220,7 @@ For each output from the original study (mainly figure 4 and figure 5), present 
 
 ![map of difference between your figure 5 and the original figure 5](RE-Malcomb/fig5_diff_map.png)
 
-![correlation between raster values of the original and replicated study](RE-Malcomb/000007.png)
+![correlation between raster values of the original and replicated study](RE-Malcomb/00000a.png)
 
 ## Unplanned Deviations from the Protocol
 
