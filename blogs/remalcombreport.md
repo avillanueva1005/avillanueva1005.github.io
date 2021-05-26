@@ -238,10 +238,7 @@ Conversely, the vulnerability replication was undoubtedly a failure due to two m
 
 ## Conclusion
 
-Restate the key findings and discuss their broader societal implications or contributions to theory.
-Do the research findings suggest a need for any future research?
-
-
+This replication has been a great learning experience as I have seen the importance of a well-written methodology no matter the content of the study. With the rise in open source science, there is a possibility for more studies to be held accountable and reproduced for further validity as well as an opportunity to apply certain methodologies to other areas of study. This means there is a need to have a clear methodology and/or easy accessibility to the computation of the data analyzed. This is seen clearly as we were able to more or less successfully replicate the adaptive capacity portion of household resilience due largely to the availability of the data and clarity of the methods for that. However, the vulnerability part of the household resilience shows the importance of better documentation and openness in how a study was conducted if this methodology were to be applied elsewhere, seeing as climate change is a universal issue currently.
 
 ## References
 
