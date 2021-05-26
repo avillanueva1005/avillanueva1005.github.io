@@ -15,7 +15,7 @@ Alitzel Villanueva, Joseph Holler, Kufre Udoh, Open Source GIScience students of
 Replication Materials Available at: [Re-Malcomb](https://github.com/avillanueva1005/RE-Malcomb-1)
 
 Created: `25 May 2021`
-Revised: `25 May 2021`
+Revised: `26 May 2021`
 
 ## Abstract
 

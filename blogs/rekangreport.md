@@ -14,10 +14,11 @@ Alitzel Villanueva
 Replication Materials Available at: [RE-Kang](https://github.com/avillanueva1005/RE-Kang)
 
 Created: `24 May 2021`
-Revised: `25 May 2021`
+Revised: `26 May 2021`
 
 # Introduction
 explaining the interest and purpose in reproducing the Kang et al (2020) study, and very briefly introducing what the study was about.
+Kang et al (2020) was heavily influenced by the recent urgent need to know the spatial accessibility of healthcare resources as hundreds of thousands of people were hospitalized last year due to a novel coronavirus disease (COVID-19)
 
 # Materials and Methods
 briefly explaining and citing what data sources and computational resources were used for the study. The length/depth of this explanation may be similar to your review of the Twitter for Wildfire Hazards paper (Wang et al 2016). Explain any changes you made to the original python notebook / repository.
