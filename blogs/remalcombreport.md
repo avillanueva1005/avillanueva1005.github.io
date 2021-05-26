@@ -213,12 +213,12 @@ For each output from the original study (mainly figure 4 and figure 5), present 
 3.	State whether any hypothesis linked to a planned deviation from the original study was supported. Provide key statistics and related reasoning.
 
 ![map of resilience by traditional authority in 2010, analagous to figure 4 of the original study](RE-Malcomb/ac_2010.png)
-Figure 1. Map of average Malawi Household Resilience by traditional authority in 2010, similar to Figure 4 in Malcomb et al.
+Figure 1. Map of average Malawi adaptive capacity by traditional authority in 2010, similar to Figure 4 in Malcomb et al.
 
 ![map of difference between your figure 4 and the original figure 4](RE-Malcomb/fig4_diff.png)
-Figure 2. Map of difference between original average resilience scores and my replication average scores.
+Figure 2. Map of difference between original average adaptive capacity scores and my replication average scores.
 
-
+Overall, there was little difference between the original map and my replication for adaptive capacity (Figure 1) as seen in Figure 2 where much of the map is covered in minor differences between -1 and 0. The Spearman's Rho value of difference in adaptive capacity was pretty close to 1, at 0.7497 with a p-value of 0, indicating that the Malcomb et al was supported by my replication of mapping adaptive capacity. These similarities between the original study and my replication were predicted due to the lack of planned deviation from Malcomb et al because both the assets and access data were provided in full, allowing for a better replication with all the data for adaptive capacity. 
 
 ![map of vulnerability in Malawi, analagous to figure 5 of the original study](RE-Malcomb/vulnerability_full.png)
 Figure 3. Map of Malawi Vulnerability to Climate Change, similar to figure 5 in Malcomb et al.
