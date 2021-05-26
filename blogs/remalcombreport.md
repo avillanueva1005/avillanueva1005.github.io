@@ -228,20 +228,20 @@ Malcomb et al. was not supported by my replication (Figure 3), given the Spearma
 
 ## Unplanned Deviations from the Protocol
 
-Given just the Malcomb et al paper, it was difficult to know exactly which steps were necessary to fully reproduce this study, much less know the order by which each process would need to take place. The methods from Malcomb et al were unclear about much of the necessary detail to plan a workflow for a successful reproduction of this study. Although we were able to gather that aggregation, rasterization, and even calculation were necessary steps, without the data our preliminary workflow did not look anything like the final workflow that we used to replicate previous reproductions. Once we had access to most of the data used by Malcomb et al we were able to better account for the different levels of data being used due to privacy issues as well as reclassify flood and drought layers as necessary. These details were initially hard to account for without looking at the metadata and datasets that were utilized.
+Given just the Malcomb et al paper, it was difficult to know exactly which steps were necessary to fully reproduce this study, much less know the order by which each process would need to take place. The methods from Malcomb et al were unclear about much of the necessary detail to plan a workflow for a successful reproduction of this study. Although we were able to gather that aggregation, rasterization, and even calculation were necessary steps, without the data our preliminary workflow did not look anything like the final workflow that we used to replicate previous reproductions. Once we had access to most of the data used by Malcomb et al we were able to better account for the different levels of data being used due to privacy issues as well as see the effects of the holes in Malcomb et al's methodology that failed to explain how they normalized indicators for households into 5 categories, scaling from 0 to 5, which is in fact 6 groups. These details were initially hard to account for without looking at the metadata and datasets that were utilized.
 
 ## Discussion
 
-Provide a summary and interpretation of the key findings of the replication *vis-a-vis* the original study results. If the attempt was a failure, discuss possible causes of the failure. In this replication, any failure is probably due to practical causes, which may include:
-- lack of data
-- lack of code
-- lack of details in the original analysis
-- uncertainties due to manner in which data has been used
+This replication was only half a failure given the high Spearman's rho value for the replication of the adaptive capacity for traditional authorities despite the low Spearman's rho value for vulnerability. The success of replicating the adaptive capacity portion of Malcomb et al can be attributed to the data provided that did not deviate from the dataset used in the original study. It is possible the Spearman's rho value was not closer to 1 for adaptive capacity due to the overall lack of code that meant it was impossible to recreate the study exactly as Malcomb et al had. Overall though, the adaptive capacity replication was significantly similar to the original study enough to make that part a success undoubtedly.
+
+Conversely, the vulnerability replication was undoubtedly a failure due to two main reasons: the lack of livelihood data used by Malcomb et al and the lack of details in the original analysis that created uncertainty in how to successfully reproduce their original results. As I mentioned earlier, it was no surprise the vulnerability replication had such a low Spearman's rho value because we were never given the same dataset for the livelihood data which meant certain error in my replication. Additionally the lack of code from Malcomb et al overall negatively affected how well this study could be reproduced because even if they had not gone into enough detail about their methods in their paper the code could have remedied a lot of the vagueness or even contradictory nature of the methods. Due to the lack of code, the reliance on only the methods meant if there was any chance of a successful complete replication of household reliance there would have had to have been extreme detail and care taken to provide unquestionable methods. Throughout this process of attempting to replicate Kufre Udoh and Joe Holler's reproduction of Malcomb et al, it has been apparent how the overall vagueness of Malcomb et al's methods has been to the detriment of this replication.
 
 ## Conclusion
 
 Restate the key findings and discuss their broader societal implications or contributions to theory.
 Do the research findings suggest a need for any future research?
+
+
 
 ## References
 
