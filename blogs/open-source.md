@@ -21,6 +21,8 @@ private businesses?
 
   Both Singleton et al. (2016) and Rey (2009) provided interesting prospectives on the use and function of open source in and out of an academic setting. Although Singleton et al. focussed more on the general implications of open source for the world around us, there were some really interesting concepts introduced about the integration of open source into academia as well. While debating the pros and cons of open source, Singleton et al. argued that without reproducibility the potential advancements of open source would be discounted. Singleton et al. laid out a strong framework for best practices in open source GIScience that can be beneficial in better understanding how we might conduct our labs in this course. This paper has helped me understand further the importance of this movement that is still in its early stages. Creating websites that not only explain our reproductions and replications, but also link all of the data in our open access repositories is key to having more transparency, which further validates these studies we replicate.
 
+  
+
 
 Literature Cited:
 Rey, S. J. 2009. Show me the code: spatial analysis and open source. Journal of Geographical Systems 11 (2):191–207. http://dx.doi.org/10.1007/s10109-009-0086-8
